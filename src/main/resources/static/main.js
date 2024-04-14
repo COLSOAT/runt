@@ -16,7 +16,7 @@ function consultarComparendos() {
 
     // Realizar la petición GET a través de XMLHttpRequest o fetch
     var xhr = new XMLHttpRequest();
-    var url = "http://localhost:8080/app/comparendos" +
+    var url = "https://runt-multa-condonacion-f333d5224b81.herokuapp.com/app/comparendos" +
         "?tipoDocumento=" + tipoDocumento +
         "&numeroIdentificacion=" + numeroIdentificacion +
         "&placaVehiculo=" + placaVehiculo;
@@ -116,7 +116,7 @@ function guardarModelo() {
         placaVehiculo: placaVehiculo
     };
 
-    fetch('http://localhost:8080/app/comparendos/save', {
+    fetch('https://runt-multa-condonacion-f333d5224b81.herokuapp.com/app/comparendos/save', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -156,7 +156,7 @@ function guardarIngreso() {
 
         // Configuración de la solicitud HTTP
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost:8080/app/ingreso/save", true); // Corregir la ruta a "/app/ingreso/save"
+        xhr.open("POST", "https://runt-multa-condonacion-f333d5224b81.herokuapp.com/app/ingreso/save", true); // Corregir la ruta a "/app/ingreso/save"
         xhr.setRequestHeader("Content-Type", "application/json");
 
         // Manejar la respuesta de la solicitud

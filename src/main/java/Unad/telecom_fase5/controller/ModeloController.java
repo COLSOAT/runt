@@ -34,7 +34,7 @@ import java.util.Locale;
 
 @RestController
 @RequestMapping("/app")
-@CrossOrigin(origins = "http://localhost:63342")
+@CrossOrigin(origins = "https://runt-multa-condonacion-f333d5224b81.herokuapp.com/")
 public class ModeloController {
 
 
