@@ -74,6 +74,7 @@ function consultarComparendos() {
                                 enlace.href = resultado[propiedad].split("-")[0]; // Obtener el enlace
                                 enlace.textContent = valorEnlace;
                                 celda.appendChild(enlace);
+                                enlace.onclick =guardarIngresoGENERAL("EL USUARIO VA A PAGAR");
                             } else {
                                 celda.textContent = resultado[propiedad];
                             }
@@ -190,7 +191,7 @@ function guardarIngresoGENERAL(texto) {
 
     // Configuración de la solicitud HTTP
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/app/ingreso/save", true); // Corregir la ruta a "/app/ingreso/save"
+    xhr.open("POST", "https://runt-multa-condonacion-f333d5224b81.herokuapp.com/app/ingreso/save", true); // Corregir la ruta a "/app/ingreso/save"
     xhr.setRequestHeader("Content-Type", "application/json");
 
     // Manejar la respuesta de la solicitud
