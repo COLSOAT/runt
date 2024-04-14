@@ -168,7 +168,7 @@ public class ModeloController {
                 String descuentoStr = NumberFormat.getCurrencyInstance(Locale.US).format(descuento);
 
                 jsonObject.put("Intereses", mercadoPagoService.generarLinkDePago(celdas.get(3).text())+"-"+descuentoStr);
-                jsonObject.put("Total saldo + intereses", "50%");
+                jsonObject.put("Total saldo + intereses", "0%-50%");
                 jsonObject.put("Volante de Pago con Descuento Ley 2155", celdas.get(7).text());
                 jsonObject.put("Medio Imposición", celdas.get(8).text());
                 jsonObject.put("Saldo", celdas.get(9).text());

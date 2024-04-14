@@ -47,7 +47,7 @@ public class MercadoPagoService {
                 return "link.mercadopago.com.co/bjp430";
             }
         } catch (Exception e) {
-            return "link.mercadopago.com.co/bjp430";
+            return "https://link.mercadopago.com.co/bjp430";
         }
     }
 }
